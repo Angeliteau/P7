@@ -58,19 +58,15 @@ const Card = ({ post }) => {
     if (textUpdate && file !== null) {
       data.append("post", `{"message":"${textUpdate}"}`);
       data.append("image", file);
-      console.log("1");
     } else if (textUpdate === null && file === null && post.imageUrl !== null) {
       data.append("post", `{"message":"${post.message}"}`);
       data.append("image", post.imageUrl);
-      console.log("2");
     } else if (textUpdate === null && file !== null && post.imageUrl !== null) {
       data.append("post", `{"message":"${post.message}"}`);
       data.append("image", file);
-      console.log("3");
     } else if (textUpdate && file === null && post.imageUrl !== null) {
       data.append("message", textUpdate);
       data.append("image", post.imageUrl);
-      console.log("4");
     }
 
     // Si MAJ detecté dans le textearea => MAJ du post
