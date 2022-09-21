@@ -1,0 +1,105 @@
+.Main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  width: auto;
+}
+
+#Logo {
+  width: 300px;
+  transform: translatey(-50px);
+}
+
+.WrappForm {
+  transform: translatey(-100px);
+  z-index: 1;
+  background-color: rgb(195, 172, 216);
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  border-radius: 20px;
+  background-color: #ffd7d7;
+  text-align: center;
+}
+
+.UlForm {
+  margin-top: 30px;
+  list-style-type: none;
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#login,
+#register {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+#login:hover,
+#register:hover {
+  transform: scale(1.05);
+}
+
+.active-btn {
+  padding: 10px 30px;
+  background-color: #f39292;
+  transition: all 0.5s 0s ease;
+  border-radius: 10px;
+}
+
+form {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+label {
+  font-size: large;
+  font-weight: 600;
+}
+
+#email,
+#password,
+#pseudo,
+#password-conf {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #f39292;
+  font-size: large;
+  font-weight: 600;
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #615c5c;
+  transition: all 0.5s 0s ease;
+  transform: scale(1.05);
+  color: white;
+}
+
+.password.error,
+.email.error,
+.password-confirm.error,
+.terms.error,
+.pseudo.error {
+  color: red;
+  font-weight: 600;
+}
+
+.success {
+  color: green;
+  font-weight: 600;
+  font-size: large;
+}
