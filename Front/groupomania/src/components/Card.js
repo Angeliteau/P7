@@ -67,6 +67,9 @@ const Card = ({ post }) => {
     } else if (textUpdate && file === null && post.imageUrl !== null) {
       data.append("message", textUpdate);
       data.append("image", post.imageUrl);
+    } else if (textUpdate === "" && file === null && post.imageUrl !== null) {
+      data.append("message", textUpdate);
+      data.append("image", post.imageUrl);
     }
 
     // Si MAJ detecté dans le textearea => MAJ du post
